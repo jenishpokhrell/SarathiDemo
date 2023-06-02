@@ -1,0 +1,1013 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+}
+html,body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------- header section start --------------------- */
+.header{
+    width: 100%;
+    background: white;
+    height: 10vh;
+    /* margin: 10px 0px ; */
+    padding: 20px 20px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    /* opacity: 1; */
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+.main h1{
+    padding-left: 10px;
+    font-size: 30px;
+}
+.navlinks ul{
+    display: flex;
+    margin: 0 8rem 0 9rem;
+    align-items: center;
+}
+.navlinks ul li{
+    list-style: none;  
+}
+.navlinks ul li a{
+    /* border: 1px solid red; */
+    /* cursor: pointer; */
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+}
+.icons-bar, .icons-flex-bar{
+    display: none;
+}
+.icons i{
+    padding-right: 30px;
+}
+.icons-flex{
+    display: flex;
+    align-items: center;
+}
+#show{
+    display: none;
+}
+
+/* Responsive design for header section */
+
+/* ------------------- FOR MOBILE ---------------------- */
+
+@media (min-width: 200px) and (max-width:480px) {
+    .header{
+        width: 100%;
+        background: white;
+        height: 7vh;
+        padding: 13px 20px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        opacity: 1;
+    }
+    .main{ 
+        display: block;
+    }
+    /* .main h1{
+        margin-left: 6px;
+    } */
+    .bars-flex{
+        /* margin-top: -4%; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navlinks{
+        margin-top: 2%;
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        right: -110%;
+        transition: .7s;
+    }
+    .navlinks ul{
+        margin: 0;
+        display: block;
+    }
+    .navlinks ul li{
+        margin-top: 20px;
+    }
+    .fa{
+        font-size: 25px;
+        position: absolute;
+        right: 5%;
+        transition: 1s;
+    }
+    .icons, .icons-flex{
+        display: none;
+    }
+    #show{
+        display: block;
+    }
+    .icons-bar, .icons-flex-bar{
+        display: block;
+    }
+    .icons-bar{
+        display: flex;
+    }
+    .icons-bar input[type="text"]{
+        display: block;
+        border: none;
+        margin: 280px 20px 0px 20px;
+        padding: 10px 10px;
+        width: 90vw;
+        background: transparent;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        border-bottom: 1px solid rgb(0, 0, 0);
+        font-size: 17px;
+        outline: 0;
+    }
+    .icons-bar i{
+        margin: 280px 10px 0px -40px;
+        padding: 14px 0px;
+    }
+    .icons-flex-bar{
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+/* -------------------------------- FOR TABLET --------------------- */
+
+@media (min-width:768px) and (max-width:1024px){
+    .header{
+        width: 100vw;
+        background: white;
+        height: 7vh;
+        padding: 20px 50px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+    .main{
+        padding: 0;
+        margin-left: -7%;
+        display: block;
+    }
+    .main h1{
+        margin-left: 1%;
+    }
+    .bars-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navlinks{
+        margin-right: -5%;
+        margin-top: 1%;
+        background-color: white;
+        height: 100vh;
+        width: 105vw;
+        position: fixed;
+        right: -110%;
+        transition: 1s;
+    }
+    .navlinks ul{
+        margin: 0;
+        display: block;
+    }
+    .navlinks ul li{
+        margin-top: 20px;
+    }
+    .fa{
+        font-size: 25px;
+        position: absolute;
+        right: 5%;
+        transition: 1s;
+    }
+    .icons, .icons-flex{
+        display: none;
+    }
+    #show{
+        display: block;
+    }
+    .icons-bar, .icons-flex-bar{
+        display: block;
+    }
+    .icons-bar{
+        display: flex;
+    }
+    .icons-bar input[type="text"]{
+        display: block;
+        border: none;
+        margin: 280px 20px 0px 20px;
+        padding: 10px 10px;
+        width: 90vw;
+        background: transparent;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        border-bottom: 1px solid rgb(0, 0, 0);
+        font-size: 17px;
+        outline: 0;
+    }
+    .icons-bar i{
+        margin: 280px 10px 0px -50px;
+        padding: 14px 0px;
+    }
+    .icons-flex-bar{
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+/* ---------------------- header section end --------------------- */
+
+
+/* ------------------ First Container section start ---------------- */
+
+.container{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)), url('./assets/1.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position:center;
+    background-size:cover;
+    position: relative;
+}
+.container-main{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.container h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 65px;
+}
+.container-para p{
+    font-size: 24px;
+    color: white;
+    padding-top: 30px;  
+}
+.container-btn{
+    padding-top: 40px;
+}
+.btn-btn{
+    width: 180px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: white;
+    border: 1px solid white;
+    transition: .5s;
+    cursor: pointer;
+}
+.btn-btn:hover{
+    background: rgb(236, 236, 236);
+    border: 1px solid rgb(236, 236, 236);
+}
+
+/* ------------------------- Responsive design for first container ------------------- */
+
+/* -------------------- FOR MOBILE ---------------------- */
+
+@media(max-width:480px){
+    .container-main{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    .container-heading h1{
+        font-size: 50px;
+    }
+    .container-para p{
+        font-size: 18px;
+        color: white;
+        padding-top: 30px;  
+    }
+    .container-btn{
+        padding-top: 30px;
+    }
+    .btn-btn{
+        width: 130px;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background: white;
+        border: 1px solid white;
+        transition: .5s;
+        cursor: pointer;
+    }
+    .btn-btn:hover{
+        background: rgb(236, 236, 236);
+        border: 1px solid rgb(236, 236, 236);
+    }
+}
+
+
+/* -------------------- FOR TABLET ------------------- */
+
+
+@media (min-width:768px) and (max-width:1024px){
+    .container-main{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    }
+    .container-heading h1{
+        font-size: 50px;
+    }
+    .container-para p{
+        font-size: 18px;
+        color: white;
+        padding-top: 30px;  
+    }
+    .container-btn{
+        padding-top: 30px;
+    }
+    .btn-btn{
+        width: 130px;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background: white;
+        border: 1px solid white;
+        transition: .5s;
+        cursor: pointer;
+    }
+    .btn-btn:hover{
+        background: rgb(236, 236, 236);
+        border: 1px solid rgb(236, 236, 236);
+    }
+}
+
+
+
+/* ------------------ First Container section end ---------------- */
+
+
+
+/* ------------------ Second Container section start ---------------- */
+
+.container-two{
+    margin: 40px;
+    padding: 50px;
+    position: relative;
+}
+.flex-container{
+    display: flex;
+    flex-basis: 48%;
+}
+.about{
+    width: 50%;
+}
+.about img{
+    width: 100%;
+}
+.about h1{
+    text-transform: uppercase;
+    opacity: .7;
+    padding: 30px 0px;
+}
+.about p{
+    padding: 20px 0px;
+    font-weight: 300;
+    font-size: 17px;
+}
+.p-one{
+    color: green;
+    cursor: pointer;
+    transition: 1s;
+}
+.p-one:hover{
+    color: rgb(110, 110, 110);
+}
+.pd-l{
+    padding-left: 50px;
+}
+
+/* ------------------------- Responsive design for second container ------------------- */
+
+@media(max-width:480px){
+    .container-two{
+        width: 100vw;
+        margin-top: -2%;
+        margin-left: -13%;
+        padding: 0px 50px;
+    }
+    .flex-container{
+        display:block;
+    }
+    .about img{
+        width: 100vw;
+    }
+    .about h1{
+        width: 100vw;
+        font-size: 20px;
+        text-transform: uppercase;
+        opacity: .7;
+        padding: 30px 20px;
+    }
+    .about p{
+        width: 100vw;
+        margin-top: -20%;
+        /* border: 1px solid red; */
+        padding: 20px 20px;
+        font-weight: 300;
+        font-size: 16px;
+    }
+    .pd-l{
+        padding: 0;
+    }
+}
+
+/* ----------------- FOR TABLET -------------------- */
+@media (min-width:768px) and (max-width:1024px){
+    .container-two{
+        width: 100vw;
+        margin-top: -2%;
+        margin-left: -13%;
+        padding: 0px 50px;
+        position: relative;
+    }
+    .flex-container{
+        display:block;
+    }
+    .about img{
+        margin-left: 25%;
+        padding: 20px 0;
+        width: 90vw;
+    }
+    .about h1{
+        width: 100vw;
+        font-size: 20px;
+        text-transform: uppercase;
+        opacity: .7;
+        padding: 80px 90px 40px 90px;
+    }
+    .about p{
+        width: 100vw;
+        margin-top: -8%;
+        padding: 30px 90px;
+        font-weight: 300;
+        font-size: 16px;
+    }
+    .pd-l{
+        padding: 0;
+    }
+}
+
+
+/* ------------------ Second Container section end ---------------- */
+
+
+
+/* ------------------- Third Container section start ----------------------------- */
+
+.container-third{
+    background-color: black;    
+}
+.third-heading h1{
+    text-align: center;
+    padding-top: 60px;
+    text-transform: uppercase;
+    color: white;
+}
+.third-para p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 19px;
+    font-weight: 300;
+    color: white;
+}
+.third-button{
+    text-align: center;
+    padding: 30px;
+}
+.btn-hero{
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 450;
+    background: green;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+hr{
+    width: 80%;
+    margin-left: 10%;
+}
+.flex-container-two{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.features{
+    cursor: pointer;
+}
+.features h1{
+    padding-top: 3%;
+    font-size: 16px;
+    color: green;
+    text-transform: uppercase;
+}
+.features p{
+    padding: 5% 0;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+.featured{
+    width: 33%;
+}
+.img{
+    margin-top: 20px;
+    width: 90%;
+    height: 90%;
+}
+.features-one{
+    cursor: pointer;
+    transition: .5s;
+}
+.features-one img{
+    width: 90%; height: 90%;
+}
+.features:hover p{
+    color: green;
+}
+.insight p{
+    padding: 80px 20px;
+    margin-right: 120px;
+    font-size: 18px;
+    text-align: end;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: green;
+}
+
+/* ------------ Responsive Design for third container section ------------------ */
+
+@media(max-width: 480px){
+    .flex-container-two{
+        width: 100vw;
+        margin-left: 0;
+        padding: 7%;
+        margin-top: 3%;
+        display: block;
+    }
+    .features{
+        padding-top: 15%;
+    }
+    .features h1{
+        width: 90vw;
+        padding-top: 3%;
+        font-size: 14px;
+        color: green;
+        text-transform: uppercase;
+    }
+    .features p{        
+        width: 90vw;
+        padding: 5% 0;
+        font-weight: 500;
+        font-size: 17px;
+        color: white;
+    }
+    .features-one img{
+        width: 80vw;
+    }
+    .features img{
+        width: 80vw;
+    }
+    .insight p{
+        width: 100vw;
+        padding: 50px 50px;
+        margin-right: 100px;
+        font-size: 14px;
+        text-align: end;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: green;
+    }
+}
+
+/* ----------------------- FOR TABLET ------------------------ */
+
+@media (min-width:768px) and (max-width:1024px){
+    .flex-container-two{
+        width: 100vw;
+        margin-left: 3%;
+        padding: 7%;
+        margin-top: 3%;
+        display: block;
+    }
+    .features{
+        padding-top: 15%;
+    }
+    .features h1{
+        width: 90vw;
+        padding-top: 1%;
+        font-size: 14px;
+        color: green;
+        text-transform: uppercase;
+    }
+    .features p{        
+        width: 80vw;
+        padding: 5% 0;
+        font-weight: 500;
+        font-size: 17px;
+        color: white;
+    }
+    .features-one img{
+        margin-top: -20%;       
+        width: 80vw;
+    }
+    /* .features-one p{
+        width: 80vw;
+    } */
+    .features img{
+        margin-bottom: 10px;
+        width: 80vw;
+    }
+    .insight p{
+        width: 100vw;
+        padding: 50px 50px;
+        margin-right: 100px;
+        font-size: 17px;
+        text-align: end;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: green;
+    }
+}
+
+
+/* ------------------- Third Container section end ----------------------------- */
+
+/* ------------------ Fourth container section start ------------------ */
+
+.flex-container-third{
+    display: flex;
+    align-items: center;
+}
+.careers{
+    width: 40%;
+    margin: 80px 20px;
+}
+.careers img{
+    width: 90%;
+    padding-left: 100px;
+    margin: 30px 10px;
+}
+.careers h1{
+    text-transform: uppercase;
+    font-size: 27px;
+    opacity: .7;
+    padding-bottom: 10px;
+}
+.careers p{
+    padding-top: 20px;
+    font-weight: 200;
+}
+
+/* Responsive design for fourth container */
+
+@media(max-width: 480px){
+    .container-fourth{
+        margin: 0;
+        padding: 0;
+    }
+    .flex-container-third{
+        display: block;
+        width: 90vw;
+    }
+    .careers img{
+        width: 90vw;
+        padding: 0;
+        margin-top: -15%;
+        margin-left:  -0%;
+    }
+    .careers h1{
+        /* border: 1px solid black; */
+        width: 90vw;
+        margin-top: -65%;
+        text-transform: uppercase;
+        font-size: 22px;
+        opacity: .7;
+        /* padding-bottom: 10px; */
+    }
+    .careers p{
+        width: 90vw;
+        /* padding-top: 20px; */
+        font-weight: 200;
+    }
+    .learn{
+        padding-bottom: 0;
+        margin-top: -10%;
+        margin-right: -15%;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+    .container-fourth{
+        margin: 0;
+        padding: 0;
+    }
+    .flex-container-third{
+        display: block;
+        width: 90vw;
+    }
+    .careers img{
+        width: 90vw;
+        padding: 0;
+        margin-top: -15%;
+        margin-left:  -0%;
+    }
+    .careers h1{
+        /* border: 1px solid black; */
+        text-align: center;
+        width: 90vw;
+        margin-top: -25%;
+        text-transform: uppercase;
+        font-size: 22px;
+        opacity: .7;
+        /* padding-bottom: 10px; */
+    }
+    .careers p{
+        width: 90vw;
+        font-weight: 200;
+    }
+    .learn{
+        padding-bottom: 0;
+        margin-top: -5%;
+        margin-right: -8%;
+    }
+}
+
+
+
+/* ------------------ Fourth container section end ------------------ */
+
+/* -------------------------- Footer section start ---------------------------- */
+
+
+.footer{
+    height: 80vh;
+    background-color: black;
+}
+.footer-heading-one h1{
+    color: white;
+    text-transform: uppercase;
+    padding-top: 10%;
+    font-size: 35px;
+    text-align: center;
+}
+.footer button{
+    position: relative;
+    left: 45%;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 8%;
+    /* text-align: center; */
+}
+.btn{
+    border: none;
+    background: transparent;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(2, 170, 2);
+    text-transform: uppercase;
+}
+
+.footer-heading-two h1{
+    margin: 40px 70px 0px 50px;
+    padding: 7px 5px;
+    color: white;
+    font-size: 35px;
+}
+.footer-para p{
+    color: green;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 20px 50px;
+    padding: 7px 10px;
+}
+.footer-icons{
+    margin: 10px 50px;
+    padding: 7px 10px;
+
+}
+.footer-icons i{
+    color: white;
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+.flex-container-fourth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-about p{
+    color: white;
+}
+.flex-links ul{
+    display: flex;
+    padding: 40px 0px;
+    justify-content: center;
+}
+.flex-links ul li a{
+    font-size: 18px;
+    font-weight: 300;
+    padding-right: 17px;
+    color: white;
+    text-decoration: none;
+}
+.flex-links ul li a:hover{
+    color: green;
+    text-decoration: underline;
+}
+.footer-about-para{
+    margin-top: 20px;
+}
+.footer-about-para p{
+    font-size: 14px;
+    font-weight: 300;
+    /* margin-top: 20px; */
+    text-align: center;
+}
+#footer-para-two{
+    width: 20%;
+    margin-top: 20px;
+}
+#footer-para-two p{
+    font-size: 18px;
+    padding: 2px 20px;
+}
+.footer-about-para-second{
+    display: none;
+}
+
+
+/*  ----------------------- Responsive design for footer section ---------------------------- */
+
+
+/* --------------------- FOR MOBILE ------------------------ */
+
+@media(max-width: 480px){
+
+    .footer{
+        height: 145vh;
+        background-color: black;
+    }
+    .footer-heading-one h1{
+        color: white;
+        text-transform: uppercase;
+        padding-top: 10%;
+        font-size: 30px;
+        text-align: center;
+    }
+    .footer button{
+        position: relative;
+        left: 35%;
+        cursor: pointer;
+        margin-top: 40px;
+        margin-bottom: 8%;
+        /* text-align: center; */
+    }
+    .flex-container-fourth{
+        display: block;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+    }
+    .footer-icons{
+        display: flex;
+    }
+    .flex-links ul{
+        display: block;
+        padding: 40px 0px;
+        margin-left: 25%;
+        /* justify-content: center; */
+    }
+    .flex-links ul li{
+        padding-top: 10px;
+    }
+    .flex-links ul li a{
+        font-size: 17px;
+    }
+    .footer-para p{
+        width: 90vw;
+        color: green;
+    }
+    .footer-about-para{
+        display: none;
+    }
+    .footer-about-para-second{
+        display: block;
+        margin-top: 10%;
+    }
+    .footer-about-para-second p{
+        color: white;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+    }
+    #footer-para-two{
+        margin-left: 10%;
+        margin-top: -3%;
+        /* border: 1px solid white; */
+        width: 90vw;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .footer{
+        height: 135vh;
+        background-color: black;
+    }
+    .footer-heading-one h1{
+        color: white;
+        text-transform: uppercase;
+        padding-top: 10%;
+        font-size: 30px;
+        text-align: center;
+    }
+    .footer button{
+        position: relative;
+        left: 40%;
+        cursor: pointer;
+        margin-top: 40px;
+        margin-bottom: 8%;
+    }
+    .flex-container-fourth{
+        display: block;
+        /* text-align: center; */
+       /* justify-content: center; */
+    }
+    .footer-icons{
+        display: flex;
+    }
+    .flex-links ul{
+        display: block;
+        padding: 40px 0px;
+        margin-left: 12%;
+        /* justify-content: center; */
+    }
+    .flex-links ul li{
+        padding-top: 15px;
+    }
+    .flex-links ul li a{
+        font-size: 17px;
+    }
+    .footer-para p{
+        width: 90vw;
+        color: green;
+    }
+    .footer-about-para{
+        display: none;
+    }
+    .footer-about-para-second{
+        display: block;
+        margin-top: 10%;
+    }
+    .footer-about-para-second p{
+        color: white;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+    }
+    #footer-para-two{
+        margin-left: 5%;
+        margin-top: 0%;
+        width: 90vw;
+    }
+}
+
+/* -------------------------- Footer section end ---------------------------- */

@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    width: 100%;
+    background: white;
+    height: 10vh;
+    margin: 10px 0px ;
+    padding: 20px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    opacity: 1;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+}
+.main h1{
+    padding-left: 10px;
+    font-size: 30px;
+}
+.navlinks ul{
+    display: flex;
+    margin: 0 8rem 0 9rem;
+    align-items: center;
+}
+.navlinks ul li{
+    list-style: none;  
+}
+.navlinks ul li a{
+    /* border: 1px solid red; */
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+}
+.icons i{
+    padding-right: 30px;
+}
+.icons-flex{
+    display: flex;
+    align-items: center;
+    /* padding: 5px; */
+}
+.container{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)), url('./assets/7.jpg') ;
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.container-main-heading{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+.container-main-para{
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+}
+.container-main-heading h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.container-main-para p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.container-main-para p a:hover{
+    text-decoration: underline;
+}
+
+.container-two{
+    margin: 15px 75px;
+}
+.flex-container{
+    display: flex;
+}
+.text p a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.text p a:hover{
+    text-decoration: underline;
+}
+.container-third{
+    padding-bottom: 30px;
+}
+.container-third-desc{
+    /* border: 1px solid red; */
+    position: relative;
+    width: 50%;
+    margin: 20px;
+    padding: 20px 70px;
+}
+.container-third-desc img{
+    width: 70%;
+    height: 70%;
+    margin: 20px 40px;
+}
+.container-third-desc h1{
+    text-transform: uppercase;
+    padding-left: 4%;
+    opacity: .7;
+
+}
+.container-third-desc p{
+    padding-top: 5%;
+    padding-left: 4%;
+    font-weight: 300;
+}
+.flex-container-two{
+    display: flex;
+}
+#box{
+    width: 60%;
+    height: 90%;
+    background-color: black;
+    opacity: .7;
+    position: absolute;
+    top: 35%;
+    right: 45%;
+}
+#box p{   
+    text-align: start;
+    /* align-items: center; */
+    color: white;
+}
+.box{
+    position: absolute;
+}
+
+.container-fourth{
+    margin: 20% 2% 4% 3%;
+    padding-left: 5%;
+}
+.container-fourth-heading h1{
+    font-size: 25px;
+    opacity: .7;
+    /* font-weight: 500 ; */
+    text-transform: uppercase;
+}
