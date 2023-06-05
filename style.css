@@ -32,7 +32,7 @@ html,body{
 }
 .navlinks ul{
     display: flex;
-    margin: 0 8rem 0 9rem;
+    margin: 0 10rem 0 13rem;
     align-items: center;
 }
 .navlinks ul li{
@@ -41,7 +41,7 @@ html,body{
 .navlinks ul li a{
     /* border: 1px solid red; */
     /* cursor: pointer; */
-    margin: 20px;
+    margin: 25px;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -147,7 +147,6 @@ html,body{
         justify-content: center;
     }
 }
-
 
 
 /* -------------------------------- FOR TABLET --------------------- */
@@ -494,7 +493,10 @@ html,body{
 }
 .third-para p{
     text-align: center;
-    padding-top: 30px;
+    width: 50%;
+    margin-left: 25%;
+    /* border: 1px solid whitesmoke; */
+    margin-top: 30px;
     font-size: 19px;
     font-weight: 300;
     color: white;
@@ -525,6 +527,7 @@ hr{
     justify-content: space-between;
 }
 .features{
+    margin: 20px 10px;
     cursor: pointer;
 }
 .features h1{
@@ -557,11 +560,16 @@ hr{
 .features:hover p{
     color: green;
 }
+.insight{
+    margin: 5% 0 0% 72%;
+    padding: 80px 5px;
+    width: 18%;
+}
+.insight a{
+    text-decoration: none;
+}
 .insight p{
-    padding: 80px 20px;
-    margin-right: 120px;
     font-size: 18px;
-    text-align: end;
     text-transform: uppercase;
     font-weight: 500;
     color: green;
@@ -649,6 +657,9 @@ hr{
     .features img{
         margin-bottom: 10px;
         width: 80vw;
+    }
+    .insight p a{
+        text-decoration: none;
     }
     .insight p{
         width: 100vw;
