@@ -15,8 +15,8 @@ html,body{
     width: 100%;
     background: white;
     height: 10vh;
-    /* margin: 10px 0px ; */
-    padding: 20px 20px;
+    /* margin-top: 10px; */
+    padding: 10px 20px;
     position: fixed;
     top: 0px;
     z-index: 1;
@@ -25,15 +25,24 @@ html,body{
 .main{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
-.main h1{
+/* .main h1{
     padding-left: 10px;
     font-size: 30px;
+} */
+.main img{
+    /* border: 1px solid black; */
+    margin-left: 10%;
+    width: 30%;
 }
 .navlinks ul{
     display: flex;
-    margin: 0 10rem 0 13rem;
+    margin: 0 20rem 0 0rem;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* text-align: center; */
 }
 .navlinks ul li{
     list-style: none;  
@@ -41,7 +50,8 @@ html,body{
 .navlinks ul li a{
     /* border: 1px solid red; */
     /* cursor: pointer; */
-    margin: 25px;
+    /* padding: 10px; */
+    margin: 35px;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -71,7 +81,7 @@ html,body{
         width: 100%;
         background: white;
         height: 7vh;
-        padding: 13px 20px;
+        padding: 8px 20px;
         position: fixed;
         top: 0;
         z-index: 1;
@@ -83,14 +93,19 @@ html,body{
     /* .main h1{
         margin-left: 6px;
     } */
+    .main img{
+        /* border: 1px solid black; */
+        margin-left: 1%;
+        width: 45%;
+    }
     .bars-flex{
-        /* margin-top: -4%; */
+        /* margin-top: -10%; */
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .navlinks{
-        margin-top: 2%;
+        margin-top: 1%;
         background-color: white;
         height: 100vh;
         width: 100vw;
@@ -107,8 +122,9 @@ html,body{
     }
     .fa{
         font-size: 25px;
-        position: absolute;
+        /* position: absolute;
         right: 5%;
+        top: -10%; */
         transition: 1s;
     }
     .icons, .icons-flex{
@@ -156,7 +172,7 @@ html,body{
         width: 100vw;
         background: white;
         height: 7vh;
-        padding: 20px 50px;
+        padding: 10px 50px;
         position: fixed;
         top: 0;
         z-index: 1;
@@ -165,6 +181,11 @@ html,body{
         padding: 0;
         margin-left: -7%;
         display: block;
+    }
+    .main img{
+        /* border: 1px solid black; */
+        margin-left: 5%;
+        width: 25%;
     }
     .main h1{
         margin-left: 1%;
@@ -242,7 +263,7 @@ html,body{
 /* ------------------ First Container section start ---------------- */
 
 .container{
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)), url('./assets/1.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)), url('./assets/1.jpg');
     height: 100vh;
     width: 100%;
     background-position:center;
@@ -255,7 +276,7 @@ html,body{
     left: 10%;
 }
 .container h1{
-    color: white;
+    color: #2c997a;
     text-transform: uppercase;
     font-size: 65px;
 }
@@ -273,14 +294,14 @@ html,body{
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    background: white;
-    border: 1px solid white;
+    background: #2c997a;
+    border: 1px solid #2c997a;
     transition: .5s;
     cursor: pointer;
 }
 .btn-btn:hover{
-    background: rgb(236, 236, 236);
-    border: 1px solid rgb(236, 236, 236);
+    background: #2e3192;
+    border: 1px solid #2e3192;
 }
 
 /* ------------------------- Responsive design for first container ------------------- */
@@ -291,10 +312,10 @@ html,body{
     .container-main{
         position: absolute;
         top: 20%;
-        left: 10%;
+        left: 5%;
     }
     .container-heading h1{
-        font-size: 50px;
+        font-size: 45px;
     }
     .container-para p{
         font-size: 18px;
@@ -310,14 +331,14 @@ html,body{
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase;
-        background: white;
-        border: 1px solid white;
+        background: #2c997a;
+        border: 1px solid #2c997a;
         transition: .5s;
         cursor: pointer;
     }
     .btn-btn:hover{
-        background: rgb(236, 236, 236);
-        border: 1px solid rgb(236, 236, 236);
+        background: #2e3192;
+        border: 1px solid #2e3192;
     }
 }
 
@@ -348,14 +369,14 @@ html,body{
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase;
-        background: white;
-        border: 1px solid white;
+        background: #2c997a;
+        border: 1px solid #2c997a;
         transition: .5s;
         cursor: pointer;
     }
     .btn-btn:hover{
-        background: rgb(236, 236, 236);
-        border: 1px solid rgb(236, 236, 236);
+        background: #2e3192;
+        border: 1px solid #2e3192;
     }
 }
 
@@ -380,12 +401,14 @@ html,body{
     width: 50%;
 }
 .about img{
+    border-radius: 10px;
     width: 100%;
 }
 .about h1{
     text-transform: uppercase;
-    opacity: .7;
+    /* opacity: .7; */
     padding: 30px 0px;
+    color: #2c997a;
 }
 .about p{
     padding: 20px 0px;
@@ -393,7 +416,7 @@ html,body{
     font-size: 17px;
 }
 .p-one{
-    color: green;
+    color: #2e3192;
     cursor: pointer;
     transition: 1s;
 }
@@ -406,6 +429,9 @@ html,body{
 
 /* ------------------------- Responsive design for second container ------------------- */
 
+
+/* ------------------------- FOR MOBILE -------------------------- */
+
 @media(max-width:480px){
     .container-two{
         width: 100vw;
@@ -417,19 +443,19 @@ html,body{
         display:block;
     }
     .about img{
-        width: 100vw;
+        margin-left:10%;
+        margin-bottom: 10%;
+        width: 90vw;
     }
     .about h1{
         width: 100vw;
         font-size: 20px;
         text-transform: uppercase;
-        opacity: .7;
-        padding: 30px 20px;
+        padding: 40px 20px;
     }
     .about p{
         width: 100vw;
         margin-top: -20%;
-        /* border: 1px solid red; */
         padding: 20px 20px;
         font-weight: 300;
         font-size: 16px;
@@ -452,20 +478,21 @@ html,body{
         display:block;
     }
     .about img{
-        margin-left: 25%;
-        padding: 20px 0;
+        /* margin-left: 25%; */
+        margin: -5% 0 10% 25%;
+        /* padding: 20px 0; */
+        border-radius: 20px;
         width: 90vw;
     }
     .about h1{
         width: 100vw;
         font-size: 20px;
         text-transform: uppercase;
-        opacity: .7;
-        padding: 80px 90px 40px 90px;
+        padding: 70px 90px 20px 90px;
     }
     .about p{
         width: 100vw;
-        margin-top: -8%;
+        margin-top: -10%;
         padding: 30px 90px;
         font-weight: 300;
         font-size: 16px;
@@ -489,7 +516,7 @@ html,body{
     text-align: center;
     padding-top: 60px;
     text-transform: uppercase;
-    color: white;
+    color: #2c997a;
 }
 .third-para p{
     text-align: center;
@@ -510,10 +537,17 @@ html,body{
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 450;
-    background: green;
+    background: #2c997a;
     border: none;
     padding: 8px;
     cursor: pointer;
+}
+.heading h1{
+    color:#2c997a; 
+    text-transform: uppercase; 
+    font-size: 25px; 
+    margin-left: 10%; 
+    margin-bottom: 20px;
 }
 hr{
     width: 80%;
@@ -526,6 +560,7 @@ hr{
     display: flex;
     justify-content: space-between;
 }
+
 .features{
     margin: 20px 10px;
     cursor: pointer;
@@ -533,7 +568,7 @@ hr{
 .features h1{
     padding-top: 3%;
     font-size: 16px;
-    color: green;
+    color: #2c997a;
     text-transform: uppercase;
 }
 .features p{
@@ -555,35 +590,53 @@ hr{
     transition: .5s;
 }
 .features-one img{
-    width: 90%; height: 90%;
+    border-radius: 10px;
+    width: 90%; 
+    height: 90%;
+}
+.features img{
+    border-radius: 10px;
 }
 .features:hover p{
-    color: green;
+    color: #2e3192;
 }
 .insight{
-    margin: 5% 0 0% 72%;
-    padding: 80px 5px;
-    width: 18%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: end;
+    padding-bottom: 7%;
+    margin: 5% 10% 0% 10%;
+    /* width: 18%; */
 }
 .insight a{
     text-decoration: none;
 }
 .insight p{
+    margin-bottom: 0%;
+    /* text-align: end; */
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 500;
-    color: green;
+    color: #2e3192;
 }
 
 /* ------------ Responsive Design for third container section ------------------ */
 
+/* ----------------------- FOR MOBILE ------------------------- */
+
 @media(max-width: 480px){
     .flex-container-two{
         width: 100vw;
-        margin-left: 0;
+        margin-left: -3%;
         padding: 7%;
         margin-top: 3%;
         display: block;
+    }
+    /* .third-para{
+        width: 140vw;
+    } */
+    .heading h1{
+        margin-left: 13% ;
     }
     .features{
         padding-top: 15%;
@@ -592,7 +645,7 @@ hr{
         width: 90vw;
         padding-top: 3%;
         font-size: 14px;
-        color: green;
+        color: #2c997a;
         text-transform: uppercase;
     }
     .features p{        
@@ -608,15 +661,16 @@ hr{
     .features img{
         width: 80vw;
     }
+    .insight{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: end;
+    }
     .insight p{
-        width: 100vw;
-        padding: 50px 50px;
-        margin-right: 100px;
         font-size: 14px;
-        text-align: end;
         text-transform: uppercase;
         font-weight: 500;
-        color: green;
+        color: #2e3192;
     }
 }
 
@@ -637,7 +691,7 @@ hr{
         width: 90vw;
         padding-top: 1%;
         font-size: 14px;
-        color: green;
+        color: #2c997a;
         text-transform: uppercase;
     }
     .features p{        
@@ -651,9 +705,6 @@ hr{
         margin-top: -20%;       
         width: 80vw;
     }
-    /* .features-one p{
-        width: 80vw;
-    } */
     .features img{
         margin-bottom: 10px;
         width: 80vw;
@@ -663,16 +714,15 @@ hr{
     }
     .insight p{
         width: 100vw;
-        padding: 50px 50px;
-        margin-right: 100px;
+        /* padding: 50px 50px; */
+        /* margin-right: 100px; */
         font-size: 17px;
         text-align: end;
         text-transform: uppercase;
         font-weight: 500;
-        color: green;
+        color: #2e3192;
     }
 }
-
 
 /* ------------------- Third Container section end ----------------------------- */
 
@@ -687,15 +737,16 @@ hr{
     margin: 80px 20px;
 }
 .careers img{
-    width: 90%;
-    padding-left: 100px;
-    margin: 30px 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 100px;
+    /* margin: 30px 10px; */
 }
 .careers h1{
     text-transform: uppercase;
     font-size: 27px;
-    opacity: .7;
     padding-bottom: 10px;
+    color: #2c997a;
 }
 .careers p{
     padding-top: 20px;
@@ -703,6 +754,9 @@ hr{
 }
 
 /* Responsive design for fourth container */
+
+/* ------------------------------- FOR MOBILE --------------------- */
+
 
 @media(max-width: 480px){
     .container-fourth{
@@ -717,18 +771,17 @@ hr{
         width: 90vw;
         padding: 0;
         margin-top: -15%;
-        margin-left:  -0%;
+        margin-left: 0%;
     }
     .careers h1{
-        /* border: 1px solid black; */
         width: 90vw;
-        margin-top: -65%;
+        margin-top: -45%;
+        text-align: center;
         text-transform: uppercase;
         font-size: 22px;
-        opacity: .7;
-        /* padding-bottom: 10px; */
     }
     .careers p{
+        text-align: justify;
         width: 90vw;
         /* padding-top: 20px; */
         font-weight: 200;
@@ -736,10 +789,11 @@ hr{
     .learn{
         padding-bottom: 0;
         margin-top: -10%;
-        margin-right: -15%;
+        margin-right: -25%;
     }
 }
 
+/* ---------------------- FOR TABLET ----------------------- */
 
 @media (min-width:768px) and (max-width:1024px){
     .container-fourth{
@@ -751,72 +805,71 @@ hr{
         width: 90vw;
     }
     .careers img{
-        width: 90vw;
+        width: 80vw;
         padding: 0;
         margin-top: -15%;
-        margin-left:  -0%;
+        margin-left:20%;
     }
     .careers h1{
         /* border: 1px solid black; */
         text-align: center;
         width: 90vw;
-        margin-top: -25%;
+        margin-top: -20%;
         text-transform: uppercase;
         font-size: 22px;
-        opacity: .7;
+        /* opacity: .7; */
         /* padding-bottom: 10px; */
     }
-    .careers p{
-        width: 90vw;
+    .careers p{   
+        text-align: justify;
+        margin-left:20%;
+        width: 80vw;
         font-weight: 200;
     }
     .learn{
         padding-bottom: 0;
         margin-top: -5%;
-        margin-right: -8%;
+        margin-right: -4%;
     }
 }
-
-
 
 /* ------------------ Fourth container section end ------------------ */
 
 /* -------------------------- Footer section start ---------------------------- */
 
-
 .footer{
-    height: 80vh;
+    height: 60vh;
     background-color: black;
 }
 .footer-heading-one h1{
-    color: white;
+    color: #2c997a;
     text-transform: uppercase;
-    padding-top: 10%;
+    padding-top: 5%;
     font-size: 35px;
     text-align: center;
 }
 .footer button{
     position: relative;
-    left: 45%;
+    left: 46.5%;
     cursor: pointer;
     margin-top: 40px;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
     /* text-align: center; */
 }
 .btn{
     border: none;
-    background: transparent;
-    padding: 5px;
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(2, 170, 2);
+    background: #2c997a;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    /* color: #2e3192; */
     text-transform: uppercase;
 }
-
 .footer-heading-two h1{
     margin: 40px 70px 0px 50px;
     padding: 7px 5px;
-    color: white;
+    color: #2c997a;
     font-size: 35px;
 }
 .footer-para p{
@@ -824,7 +877,7 @@ hr{
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
-    margin: 20px 50px;
+    /* margin: 20px 50px; */
     padding: 7px 10px;
 }
 .footer-icons{
@@ -837,13 +890,20 @@ hr{
     font-size: 25px;
     padding-right: 20px;
 }
-
+.footer-icons i:hover{
+    color: #2e3192;
+    font-size: 25px;
+    padding-right: 20px;
+}
 .flex-container-fourth{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+.footer-image img{
+    width: 60%;
+    margin: 10% 1% 5% 10%;
+}
 .footer-about p{
     color: white;
 }
@@ -860,7 +920,7 @@ hr{
     text-decoration: none;
 }
 .flex-links ul li a:hover{
-    color: green;
+    color: #2e3192;
     text-decoration: underline;
 }
 .footer-about-para{
@@ -891,9 +951,8 @@ hr{
 /* --------------------- FOR MOBILE ------------------------ */
 
 @media(max-width: 480px){
-
     .footer{
-        height: 145vh;
+        height: 95vh;
         background-color: black;
     }
     .footer-heading-one h1{
@@ -903,13 +962,20 @@ hr{
         font-size: 30px;
         text-align: center;
     }
+    /* .footer-about{
+        border: 2px solid white;
+    } */
     .footer button{
         position: relative;
-        left: 35%;
+        left: 37%;
         cursor: pointer;
         margin-top: 40px;
         margin-bottom: 8%;
         /* text-align: center; */
+    }
+    .footer-image img{
+        width: 200%;
+        margin: 40% 90% 15% 50%; 
     }
     .flex-container-fourth{
         display: block;
@@ -957,9 +1023,12 @@ hr{
     }
 }
 
+
+/* -------------------------- FOR TABLET ---------------------- */
+
 @media (min-width:768px) and (max-width:1024px){
     .footer{
-        height: 135vh;
+        height: 125vh;
         background-color: black;
     }
     .footer-heading-one h1{
@@ -971,10 +1040,14 @@ hr{
     }
     .footer button{
         position: relative;
-        left: 40%;
+        left: 44%;
         cursor: pointer;
         margin-top: 40px;
         margin-bottom: 8%;
+    }
+    .footer-image img{
+        width: 100%;
+        margin: 40% 0% 15% 20%; 
     }
     .flex-container-fourth{
         display: block;
