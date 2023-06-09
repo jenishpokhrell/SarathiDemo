@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results-driven Accounting firm | Sarathi</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Wix+Madefor+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+        <style>
+            .fa{
+                font-size: 28px;
+            }
+        </style>
+</head>
+
+<body>
+
+
+    <section class="header">
+        <div class="main">
+            <div class="bars-flex">
+                <a href="index.html"><img src="./assets/logo2.png" alt="Sarathi consult logo"></a>
+                <i class="fa fa-times" id="hide" onclick="hidemenu()" style="display: none; cursor: pointer;"></i>
+                <i class="fa fa-bars" id="show" onclick="showmenu()" style="cursor: pointer;"></i>
+            </div>
+            <div>         
+                <nav class="navlinks" id="nav-links">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-container">
+        <div class="contact-container-main">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <section class="contact-second-container">
+        <div class="contact-second-container-heading">
+            <h1>Have any Queries? We're here to help.</h1>
+        </div>
+        <div class="form">
+            <div class="contact">
+                <form action="" method="">
+                    <input type="text" name="txtname" placeholder="Name">
+                    <input type="text" name="txtsub" placeholder="Subject">
+                    <input type="email" name="txtemail" placeholder="Email" aria-required="true">
+                    <textarea name="txtarea" id="" cols="40" rows="8" placeholder="Write Your Message..."></textarea>
+                    <input type="submit" value="Send Message" style="cursor: pointer;">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+            <!-- <div class="footer-heading-one">
+                <h1>Contact Us</h1>
+            </div>
+            <div>
+                <a href="contact.html"><button class="btn">Show form</button></a>
+            </div>
+            
+            <hr style="width: 100%; padding:3px; margin: 0px; background: #2e3192;"> -->
+        <div class="flex-container-fourth">
+            <div class="footer-about" style="width: 25%;">
+                <div class="footer-image">
+                    <img src="./assets/logo2.png" alt="Sarathi consult logo">
+                    <!-- <img src="./assets/Sarathi Logo 1.png" alt=""> -->
+                </div>
+                <div class="footer-icons">
+                    <a href=""><i class="fa-solid fa-wifi"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100092993693792" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-about" style="width: 60%;">
+                <div class="flex-links">
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About Sarathi</a>
+                        </li>
+                        <li>
+                            <a href="">Services</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-about-para">
+                    <p>
+                        Copyright &copy; 2023 Sarathi || All Rights Reserved
+                    </p>
+                </div>
+            </div>
+            <div class="footer-about" id="footer-para-two">
+                <p>Kamalpokhari - 01</p>
+                <p>Kathmandu, Nepal</p>
+                <p>P: &nbsp; 01-4542297</p>
+                <p>M: &nbsp; 976-1745192</p>
+                <p>consultants.sarathi@gmail.com</p>
+            </div>
+            <div class="footer-about-para-second">
+                <p>
+                    Copyright &copy; 2023 Sarathi || All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var navbar = document.getElementById("nav-links");
+        var hide = document.getElementById("hide");
+        var show = document.getElementById("show");
+
+        function showmenu() {
+            navbar.style.right = "0";
+            show.style.display = "none";
+            hide.style.display = "block"
+        }
+        function hidemenu() {
+            navbar.style.right = "-110%";
+            show.style.display = "block";
+            hide.style.display = "none";
+        }
+    </script>
+    </body>
+    </html>
